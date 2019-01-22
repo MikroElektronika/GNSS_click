@@ -1,0 +1,34 @@
+'
+'
+'Use mikroE Timer Calculator to generate proper timer configuration
+'and timer ISR.
+'
+'https://www.mikroe.com/timer-calculator
+'
+'
+module Click_GNSS_timer
+
+include Click_GNSS_types
+dim
+    timerCounter as uint32_t 
+    
+sub procedure Timer_interrupt() iv IVT_ADDR_T1INTERRUPT
+sub procedure gnss_configTimer()  
+
+implements
+
+sub procedure gnss_configTimer() 
+    T1CON = 0x8000 
+    T1IE_bit = 1 
+    T1IF_bit = 0 
+    IPC0 = IPC0 or 0x1000 
+    PR1 = 4000 
+end sub
+
+sub procedure Timer_interrupt() iv IVT_ADDR_T1INTERRUPT 
+    T1IF_bit = 0 
+    inc(timerCounter)
+    gnss_tick() 
+end sub
+
+end.

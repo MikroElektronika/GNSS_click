@@ -1,0 +1,21 @@
+0	1	mikroCARM.exe -MSF -DBG -pSTM32F107VC -BIN -LHF -DL -SSA -O11111114 -fo72 -N"D:\Clicks_git\G\GNSS_Click\SW\example\c\ARM\STM\Click_GNSS_STM.mcpar" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\ST M3\" -SP"D:\Clicks_git\G\GNSS_Click\SW\example\c\ARM\STM\" -SP"D:\Clicks_git\G\GNSS_Click\SW\library\HAL\" -SP"D:\Clicks_git\G\GNSS_Click\SW\library\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Packages\mikroBUS Board Definition API\Uses\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\ST M3\" -IP"D:\Clicks_git\G\GNSS_Click\SW\example\c\ARM\STM\" -IP"D:\Clicks_git\G\GNSS_Click\SW\library\" -IP"D:\Clicks_git\G\GNSS_Click\SW\library\HAL\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Packages\mikroBUS Board Definition API\Uses\" "Click_GNSS_STM.c" "__gnss_driver.c" "__Lib_Math.emcl" "__Lib_MathDouble.emcl" "__Lib_Delays.emcl" "__Lib_System_105_107.emcl" "__Lib_GPIO_32F10x_Defs.emcl" "__Lib_GPIO_32F10x.emcl" "__Lib_CString.emcl" "__Lib_Conversions.emcl" "__Lib_UART_123_45.emcl" "easymx_v7_STM32F107VC.emcl" "Click_GNSS.pld"	 
+diagnostics: 0	122	Compilation Started	stdint.h
+hint: 0	1004	interrupt handler (Timer_interrupt at 0x002C)	click_gnss_timer.h
+diagnostics: 180	123	Compiled Successfully	Click_GNSS_STM.c
+hint: 53	1164	Variable 'evArgs' has been eliminated by optimizer	Click_GNSS_STM.c
+diagnostics: 0	122	Compilation Started	stdint.h
+warning: 161	1503	Result is not defined in function: 'DCE_getState'	__gnss_driver.c
+diagnostics: 848	123	Compiled Successfully	__gnss_driver.c
+hint: 217	1164	Variable 'tmp' has been eliminated by optimizer	__gnss_driver.c
+hint: 135	1164	Variable 'tmp' has been eliminated by optimizer	__gnss_driver.c
+hint: 305	1164	Variable 'tmp' has been eliminated by optimizer	__gnss_driver.c
+hint: 316	1164	Variable 'tmp' has been eliminated by optimizer	__gnss_driver.c
+hint: 735	1164	Variable 'tmp' has been eliminated by optimizer	__gnss_driver.c
+diagnostics: 0	127	All files Compiled in 203 ms	 
+hint: 0	1144	Used RX: 16 (100%)   Free RX: 0 (0%)	Used RX: 16 (100%)   Free RX: 0 (0%)
+hint: 0	1144	Static RAM (bytes): 2539   Dynamic RAM (bytes): 62993	Static RAM (bytes): 2539   Dynamic RAM (bytes): 62993
+hint: 0	1144	Used ROM (bytes): 11242 (4%)  Free ROM (bytes): 250902 (96%)	Used ROM (bytes): 11242 (4%)  Free ROM (bytes): 250902 (96%)
+diagnostics: 0	125	Project Linked Successfully	Click_GNSS_STM.mcpar
+diagnostics: 0	128	Linked in 329 ms	 
+diagnostics: 0	129	Project 'Click_GNSS_STM.mcpar' completed: 688 ms	 
+diagnostics: 0	103	Finished successfully: 22 jan 2019, 16:47:25	Click_GNSS_STM.mcpar

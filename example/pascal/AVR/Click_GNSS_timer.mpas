@@ -1,0 +1,37 @@
+{
+
+Use mikroE Timer Calculator to generate proper timer configuration
+and timer ISR.
+
+https://www.mikroe.com/timer-calculator
+
+}
+unit Click_GNSS_timer;
+
+uses Click_GNSS_types;
+
+var
+    timerCounter : uint32_t; 
+    
+procedure Timer_interrupt(); org IVT_ADDR_TIMER1_COMPA;
+procedure gnss_configTimer(); 
+
+implementation
+
+procedure gnss_configTimer(); 
+begin
+    SREG_I_bit := 1; 
+    TCCR1A := 0x80; 
+    TCCR1B := 0x09; 
+    OCR1AH := 0x1F; 
+    OCR1AL := 0x3F; 
+    OCIE1A_bit := 1; 
+end;
+
+procedure Timer_interrupt(); org IVT_ADDR_TIMER1_COMPA;
+begin
+    gnss_tick(); 
+    inc(timerCounter);
+end;
+
+end.
